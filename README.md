@@ -27,3 +27,35 @@ git pull: Baixa o conteúdo do repositório remoto, atualizando automaticamente 
 $ git pull
 git push: Envia o conteúdo do repositório local, atualizando automaticamente o repositório remoto.
 $ git push
+
+PARA NAVEGAR ENTRE OS COMMITS
+$ git checkout ID do commit
+PARA VOLTAR PARA O HEAD para o commit principal MAIN ou MASTER
+git checkout  main
+git checkout master
+
+CRIAR NOVA BRANCH
+git checkout -b  nome_da_branch
+
+JUNTAR  BRANCHES
+git  merge nome_da_branch
+
+ENVIAR PROJETO PARA O GITHUB
+
+…or create a new repository on the command line
+echo "# peba-01" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/onecio/peba-01.git
+git push -u origin main
+…or push an existing repository from the command line
+git remote add origin https://github.com/onecio/peba-01.git
+git branch -M main
+git push -u origin main
+PRÓXIMOS PUSHS
+git push 
+
+
+
